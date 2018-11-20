@@ -9,6 +9,7 @@
 #define NativeVolume_h
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
+#import "Util.h"
 
 struct Observation {
     NSString * _Nullable VolumeKey = @"outputVolume";
