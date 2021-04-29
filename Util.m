@@ -29,5 +29,17 @@ char* MakeStringCopy (const char* string)
     return res;
 }
 
+const char* GetSettingsURL ()
+{
+    NSURL* url = [NSURL URLWithString: UIApplicationOpenSettingsURLString];
+    return MakeStringCopy(url.absoluteString);
+}
+
+void OpenSettings ()
+{
+    NSURL* url = [NSURL URLWithString: UIApplicationOpenSettingsURLString];
+    [[UIApplication sharedApplication] openURL: url];
+}
+
 
 @end

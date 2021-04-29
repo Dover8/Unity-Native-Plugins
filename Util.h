@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 NSString* CreateNSString (const char* string);
 char* MakeStringCopy (const char* string);
+const char* GetSettingsURL ();
+void OpenSettings ();
 
 @end
 
